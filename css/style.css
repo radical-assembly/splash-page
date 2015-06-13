@@ -1,0 +1,405 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+.row {
+  position: relative;
+  background: #fff; }
+
+.contact_label {
+  font-weight: 300;
+  margin-top: 5px;
+  pointer-events: none; }
+
+input.input_label,
+input.input_label:focus {
+  width: 100%;
+  border: none; }
+
+input[type="submit"] {
+  width: 100%;
+  background: #ff5800;
+  color: #fff;
+  border: none;
+  border-radius: none;
+  padding: 8px;
+  text-transform: uppercase; }
+
+textarea.floatLabel {
+  resize: none;
+  padding-right: 100px; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background: none;
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #9a9b9c;
+  font-size: 16px;
+  font-weight: 300;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+  border: none; }
+  input[type="text"]:focus, input[type="text"]:hover,
+  input[type="email"]:focus,
+  input[type="email"]:hover,
+  input[type="tel"]:focus,
+  input[type="tel"]:hover,
+  textarea:focus,
+  textarea:hover {
+    outline: none; }
+    input[type="text"]:focus label, input[type="text"]:hover label,
+    input[type="email"]:focus label,
+    input[type="email"]:hover label,
+    input[type="tel"]:focus label,
+    input[type="tel"]:hover label,
+    textarea:focus label,
+    textarea:hover label {
+      cursor: text; }
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer; }
+
+label {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 6px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+  z-index: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 35px; }
+
+label.active {
+  right: 0;
+  left: auto;
+  color: #fff;
+  background: #ff5800;
+  padding: 6px;
+  top: -5px;
+  width: auto;
+  height: 35px; }
+
+label.has-content {
+  right: 0;
+  left: auto;
+  color: #f8971d;
+  background: transparent;
+  padding: 6px;
+  top: -6px;
+  width: auto; }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  /* Location of the image */
+  background-image: url(../images/background-photo.jpg);
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+   the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color: #464646;
+ /* SHORTHAND CSS NOTATION
+* background: url(background-photo.jpg) center center cover no-repeat fixed;
+*/ }
+
+/* Presentational style rules only
+ * Not required
+ */
+html,
+body,
+.container {
+  height: 100%; }
+
+/* Reset */
+html,
+body,
+h1,
+p,
+a,
+div,
+section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit; }
+
+/* Basic */
+body {
+  font: 18px/23px "Muli", sans-serif;
+  color: #ffffff; }
+
+h1 {
+  color: #efecec;
+  color: #ffffff;
+  font-size: 4.6rem;
+  font-weight: 700;
+  text-align: center; }
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+  transform: scaleY(1.0005); }
+
+a {
+  color: #ffffff; }
+
+p {
+  margin: 0 0 15px 0; }
+
+strong {
+  font-weight: 700; }
+
+blockquote {
+  display: block;
+  max-width: 480px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #e1e1e1;
+  font-family: "Muli", serif;
+  font-size: 22px;
+  line-height: 28px; }
+
+blockquote cite {
+  display: block;
+  font: 18px/23px "Muli", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+  color: #cccccc;
+  text-transform: uppercase; }
+
+/* Layout */
+.navbar {
+  width: 100%;
+  height: 40px;
+  z-index: 9999;
+  position: fixed;
+  top: 1rem; }
+
+.fb {
+  background: url(../images/fb.svg) no-repeat left center; }
+
+.twit {
+  background: url(../images/twitter.svg) no-repeat left center; }
+
+.fb,
+.twit {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-size: 26px 26px;
+  margin: 0 0.15rem; }
+
+.logo {
+  display: block;
+  padding-left: 35px;
+  height: 24px;
+  background: url(../images/logo.svg) no-repeat left center;
+  background-size: 24px 24px;
+  text-decoration: none; }
+
+.inner .left-brand {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: scaleX(1.0042); }
+.inner .right-brand {
+  position: absolute;
+  right: 1%;
+  top: 1%; }
+
+.container {
+  display: table;
+  padding-top: 1rem;
+  width: 100%; }
+
+.content {
+  display: table-cell;
+  vertical-align: middle; }
+  .content .wrapper {
+    width: 50%;
+    margin: 0 auto; }
+    .content .wrapper .left-col, .content .wrapper .right-col {
+      width: 45%;
+      display: inline-block; }
+    .content .wrapper .left-col {
+      float: left;
+      margin-right: 10%; }
+    .content .wrapper .right-col {
+      float: right; }
+
+/* Special */
+.sub-title {
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase; }
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #cafaea;
+  border: 1px solid #cafaea;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase; }
+
+#more-content {
+  display: none; }
+
+footer {
+  position: fixed;
+  bottom: 3%;
+  width: 100%;
+  z-index: 999; }
+  footer p {
+    font-size: 0.5rem; }
+  footer .left-foot {
+    position: absolute;
+    left: 1%; }
+  footer .right-foot {
+    position: absolute;
+    right: 1%; }
+
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+  .container {
+    position: relative;
+    display: block;
+    float: left;
+    vertical-align: baseline;
+    margin: 0 auto;
+    padding: 35px 0 0 0; }
+
+  .navbar {
+    position: static;
+    margin-top: 1rem;
+    display: block; }
+    .navbar .left-brand {
+      position: relative;
+      text-align: center;
+      margin-bottom: 1rem; }
+      .navbar .left-brand .logo {
+        display: inline; }
+    .navbar .right-brand {
+      position: relative;
+      text-align: center; }
+
+  footer {
+    position: static;
+    display: inline-block;
+    margin: 5%;
+    width: auto; }
+    footer p {
+      font-size: 0.5rem;
+      text-align: left; }
+    footer .left-foot {
+      position: relative; }
+    footer .right-foot {
+      position: relative; }
+
+  .content {
+    margin: 0 5%;
+    display: block;
+    clear: both; }
+    .content .wrapper {
+      width: 100%; }
+      .content .wrapper .left-col, .content .wrapper .right-col {
+        width: 100%;
+        display: inline-block; }
+      .content .wrapper .left-col {
+        float: none;
+        margin-right: 0; }
+      .content .wrapper .right-col {
+        float: none; }
+
+  #more-content {
+    float: left;
+    margin-right: 10px; }
+
+  h1 {
+    font-size: 2.9rem;
+    line-height: 3.4rem; }
+
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    margin: 0.75rem 0; }
+
+  blockquote {
+    display: inline;
+    margin: 0 auto;
+    padding-top: 80px;
+    vertical-align: baseline; }
+
+  blockquote {
+    width: 150px;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: transparent; }
+
+  blockquote cite {
+    font-size: 14px;
+    line-height: 19px; }
+
+  .sub-title {
+    font-size: 14px;
+    line-height: 21px; }
+
+  .button,
+  p {
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 20px; }
+
+  html,
+  body,
+  .container {
+    height: auto; } }
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+   /* The file size of this background image is 93% smaller
+* to improve page load speed on mobile internet connections */
+    background-image: url(../images/background-photo-mobile-devices.jpg); } }
+
+/*# sourceMappingURL=style.css.map */
