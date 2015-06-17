@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="24px" height="24px" viewBox="0 0 24 24">
-<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
-<feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/>
-<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
-<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
-</filter>
-<image x="0" y="0" width="24" height="24" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA5FBMVEUAAAD8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB/8WB////+xxTMKAAAASnRSTlMA2TBa29AW6Bzg1D5+IJZOi1kYwLgol4Yt9kEIEO/4Au70FLMGrIg4f2Zs8BLcBCyAG+dQ7Ayo/WBRcFho5PMDJCEzxF1vtPHi7a3/TykAAAABYktHREtpC4VQAAAAuklEQVQoz63RRw7CMBAF0I8pIXQInUAIvYbeS+jF9z8QJmIR7KwQX/LI0pM8Iw+oGFj5EVyExe0RwWtdfZID+OVAECH7ex8IUxpB1BliiDtAQkmmkI6QDA/vZHN5EB4KBGqxVIBW5nvoFVQV1FAXmjfQbKGNjgBdFT30jYE47hAYyQNIdhhPspROZ9ZscztQumBnidV6g+03vNPEju7NgwC6cWT1xJT74rN5YfWq3YQ13h+s7J5/WPx3XspneEixsXOwAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTA2LTEyVDEwOjMzOjI1KzAwOjAwU+1ZkgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wNi0xMlQxMDozMzoyNSswMDowMCKw4S4AAAAASUVORK5CYII=" /></svg>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="380.6px" height="380.6px" viewBox="0 0 380.6 380.6" enable-background="new 0 0 380.6 380.6"
+	 xml:space="preserve">
+<defs>
+</defs>
+<polyline fill="#FFFEFD" points="380.6,380.6 380.6,79.4 301.2,79.4 301.2,0 0,0 0,301.2 79.4,301.2 79.4,380.6 "/>
+<path fill="#FFFEFD" d="M263.2,322.9l-14-59.2h-37.4l-14,59l-29.9-8.1l13.4-52.5l-44.3-91.5h-11.4v85.3l-34-9.9V49.6h60.8
+	c12.2,0,24.4,5.4,33.6,14.7c7.5,7.5,16.4,21.3,16.4,43.5c0,27.2-11,47.8-30.6,57.8l22.2,46.1l20.9-82.1H246l47.1,184.8L263.2,322.9z
+	"/>
+<polygon fill="#FFFFFF" points="219,235.6 241.9,235.6 230.5,187.4 "/>
+<path fill="#FFFFFF" d="M143.4,81.6h-17.9v57H148c13.2,0,19.9-10.1,19.9-30.8C167.9,85.8,158.1,81.6,143.4,81.6z"/>
+</svg>
